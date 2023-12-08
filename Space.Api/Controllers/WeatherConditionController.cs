@@ -24,7 +24,6 @@ namespace Space.API.Controllers
         public async Task<IActionResult> All([FromQuery] int page = 1, [FromQuery] int size = 10, [FromQuery] string someFilter = null, [FromQuery] string sort = null)
         {
             var weatherConditions = await _service.GetAllAsync();
-
             // Filtreleme
             if (!string.IsNullOrEmpty(someFilter))
             {
