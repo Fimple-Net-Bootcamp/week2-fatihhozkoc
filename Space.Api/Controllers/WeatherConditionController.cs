@@ -30,6 +30,7 @@ namespace Space.API.Controllers
                 weatherConditions = weatherConditions.Where(wc => wc.SurfaceTemperature == 100).ToList();
             }
 
+
             // Sıralama
             if (!string.IsNullOrEmpty(sort))
             {
